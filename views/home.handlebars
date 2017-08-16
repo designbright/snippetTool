@@ -1,0 +1,76 @@
+<!-- title
+A body (the code)
+Optional notes
+A language
+Tags that is, user-defined words or phrases that classify the code, like "authentication", "front-end", "middleware", or "database".
+Author-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="homeCSS.css">
+  <title>Home</title>
+</head>
+
+  <body>
+    <h1>Welcome back!</h1>
+
+    {{#if username}}
+        <p class="welcome">Welcome back, {{username}}!</p>
+      {{/if}}
+
+      <!-- <input class="button" type="submit" name="Submit" value="Create New Snippet" placeholder="Create New Snippet"/> -->
+
+      <p class="message">Want to create a new snippet? <a href="/addSnippet">Create New Snippet</a></p>
+
+      <button type="button" name="button"><a href="/logout">Log out</a></button>
+
+      <h1>All Snippets</h1>
+
+
+      <table border="1">
+        <tr>
+          <th>
+            Title
+          </th>
+          <th>
+            Tags
+          </th>
+          <th>
+            Author
+          </th>
+          <th>
+            Language
+          </th>
+          <th>
+            Description
+          </th>
+          <th>
+            Snippet
+          </th>
+        </tr>
+
+        {{#snippet}}
+        <tr>
+          <td><a href="/newSnippet?id={{_id}}">{{title}}</a></td>
+          <td>{{tags}}</td>
+          <td>{{author}}</td>
+          <td>{{language}}</td>
+          <td>{{description}}</td>
+          <td>{{snippet}}</td>
+          <td><a href="/deleteSnippet/?id={{_id}}">Delete Snippet</a></td>
+        </tr>
+        {{/snippet}}
+
+      </table>
+
+      <div class="container">
+        {{{body}}}
+      </div>
+
+
+  </body>
+  </html>

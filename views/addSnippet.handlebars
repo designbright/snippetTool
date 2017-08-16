@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="createAccountCSS.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <title>Create New Snippet</title>
+  </head>
+  <body>
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta charset="utf-8">
+        <title>Create a New Snippet</title>
+      </head>
+      <body>
+        <h1>Create a New Snippet</h1>
+
+        <form action="/saveSnippet" method="post">
+
+          <label for="title">Title</label>
+          <input type="text" id="title" name="title" value="{{newSnippet.title}}" />
+          <div class="fieldError">{{errors.title.message}}</div>
+          <br/>
+
+          <label for="tags">Tags</label>
+          <input type="text" id="tags" name="tags" value="{{newSnippet.tags}}" />
+          <div class="fieldError">{{errors.tags.message}}</div>
+          <br/>
+
+          <label for="author">Author</label>
+          <input type="text" id="author" name="author" value="{{newSnippet.author}}" />
+          <div class="fieldError">{{errors.author.message}}</div>
+          <br />
+
+          <label for="language">Language</label>
+          <input type="text" id="language" name="language" value="{{newSnippet.language}}" />
+          <div class="fieldError">{{errors.language.message}}</div>
+          <br />
+
+          <label for="description">Description</label>
+          <input type="text" id="description" name="description" value="{{newSnippet.description}}" />
+          <div class="fieldError">{{errors.description.message}}</div>
+          <br />
+
+          <label for="snippet">Snippet</label>
+          <input type="text" id="snippet" name="snippet" value="{{newSnippet.snippet}}" />
+          <div class="fieldError">{{errors.snippet.message}}</div>
+          <br />
+
+          {{#if newSnippets._id}}
+            <input type="hidden" name="id" value="{{newSnippets._id}}" />
+          {{/if}}
+
+          <button class="button-primary">Create and Save New Snippet</button>
+        </form>
+
+      </body>
+    </html>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <div class="wrapper"> -->
+      <!--this is the page that will display for /userLogin form that has a username and password inputs and only one submit button  -->
+
+      <!-- The form will show up on the browser for the user -->
+<!-- <form id="snippetForm" action="/newSnippet" method="POST"/> -->
+
+<!--Should I be referencing the schema I created in the index.js file called "newSnippet" when i put it in handlebars?  -->
+  <!-- <label for="title">Title</label>
+  <input id="title" type="text" name="title" placeholder="Title" value="{{newSnippet.title}}"/>
+  <div class="fieldError">{{errors.category.message}}</div>
+
+  <label for="tags">Tags</label>
+  <input id="tags" type="text" name="tags" placeholder="Tags" value="{{newSnippet.tags}}"/>
+  <div class="fieldError">{{errors.category.message}}</div>
+
+
+  <input class="input" type="text" name="author" placeholder="Author" value="{{author}}"/>
+
+        <select name="language" placeholder="Select Lanaguage">
+          <option value="Language">Select Language</option>
+          <option value="{{HTML}}">HTML</option>
+          <option value="CSS">CSS</option>
+          <option value="JavaScript">JavaScript</option>
+          <option value="NodeJS">NodeJS</option>
+        </select>
+
+      <br>
+
+      <textarea rows="10" cols="50" name="description" placeholder="Description"></textarea>
+      <br>
+
+      <input class="input" type="text" name="snippet" placeholder="Snippet" value="{{snippet}}"/>
+
+      <input class="button" type="submit" name="Submit" value="Create New Snippet" placeholder="Create New Snippet"/>
+
+        <p class="message">Want to view all of your snippets? <a href="/home">View All Snippets</a></p>
+      </form>
+
+    </div>
+
+  </body>
+</html> -->

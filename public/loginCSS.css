@@ -1,0 +1,75 @@
+/*USER LOGIN CSS*/
+
+html{
+  height: 100%;
+}
+
+body{
+  background: linear-gradient(45deg, #49D49D 10%, #A2C7E5 90%);
+  font-family: 'Roboto', sans-serif;
+}
+
+/*.pageTitle{
+  font-family: 'Roboto';
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 0;
+  font-size: 60px;
+}*/
+
+.formTitle{
+  color: #49D49D;
+}
+
+#login-page {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+
+#loginForm {
+  height: 350px;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+#loginForm .input{
+display: block;
+/*font-family: "Roboto", sans-serif;*/
+outline: 0;
+background: #f2f2f2;
+width: 100%;
+border: 0;
+margin: 20px 0 15px;
+padding: 15px;
+box-sizing: border-box;
+font-size: 14px;
+}
+
+.button {
+  text-transform: uppercase;
+  outline: 0;
+  background: #49D49D;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+#loginForm .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+
+#loginForm .message a {
+  color: #49D49D;
+  text-decoration: none;
+}

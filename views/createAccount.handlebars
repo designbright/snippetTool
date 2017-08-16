@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="createAccountCSS.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <title>Create New Account</title>
+  </head>
+  <body>
+    <header>
+      <!-- <h1>User Login</h1> -->
+    </header>
+
+    <section id='createAccount'>
+      <!--this is the page that will display for /userLogin form that has a username and password inputs and only one submit button  -->
+
+      <!-- The form will show up on the browser for the user -->
+      <form id="loginForm" action="/createAccount" method="POST"/>
+        <input class="input" type="text" name="firstname" placeholder="First Name" value=""/>
+        <input class="input" type="text" name="lastname" placeholder="Last Name" value=""/>
+        <input class="input" type="text" name="username" placeholder="Username" value=""/>
+        <input class="input" type="password" name="password" placeholder="Password" value=""/>
+        <input class="button" type="submit" name="Submit" value="Create New Account"/>
+        
+        <p class="message">Already have an account? <a href="/login">Login</a></p>
+      </form>
+
+    </section>
+
+  </body>
+</html>

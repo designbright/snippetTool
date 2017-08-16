@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>All Snippets</title>
+  </head>
+  <body>
+
+
+    <h1>All Snippets</h1>
+
+
+    <table border="1">
+      <tr>
+        <th>
+          Title
+        </th>
+        <th>
+          Tags
+        </th>
+        <th>
+          Author
+        </th>
+        <th>
+          Language
+        </th>
+        <th>
+          Description
+        </th>
+        <th>
+          Snippet
+        </th>
+      </tr>
+
+      {{#newSnippet}}
+      <tr>
+        <td><a href="/addSnippet?id={{_id}}">{{title}}</a></td>
+        <td>{{tags}}</td>
+        <td>{{author}}</td>
+        <td>{{language}}</td>
+        <td>{{description}}</td>
+        <td>{{snippet}}</td>
+        <td><a href="/deleteSnippet/?id={{_id}}">Delete Snippet</a></td>
+      </tr>
+      {{/newSnippet}}
+
+    </table>
+
+  </body>
+</html>

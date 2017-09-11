@@ -2,8 +2,6 @@
 // NEED TO USE PASSPORT TO AUTHENTICATE RETURNING USERS (PASSPORT DOES NOT HANDLE USER REGISTRATION)
 //   Passport is an authentication module for EXPRESS.
 
-
-
 // Example of safe storage password with Mongoose
 const MongoClient = require('mongodb');
 const mongoose = require('mongoose');
@@ -256,11 +254,9 @@ app.get('/logout', function(req, res) {
 // DONT TOUCH CODE ABOVE THIS ====== NEW SNIPPET IS POPULATING TO MONGO IN THE 'newsnippets' collection ===============
 
 // TODO ==================
-// Make all snippets populate to 'home' page so user can click on each one and edit or delete it
+// Make all snippets populate to 'home' page so user can click on each one and edit 
 
 // How can I get snippets to populate to a unique user?
-
-
 
 // DONT TOUCH CODE BELOW THIS ============
 // connect to mongo via mongoose. The file path should reference the name of your MongoDB

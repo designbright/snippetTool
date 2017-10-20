@@ -1,6 +1,6 @@
 #snippetTool
 
-Using Passport, Node, Express, and MongoDB and Mongoose, create an application that organizes code snippets that you save for later use.
+Using Passport, Bcrypt, Node, Express, and MongoDB and Mongoose, create an application that requires users to login and organizes code snippets that you save for later use.
 
 Using Express, Mustache, and express-session, create an app with a login page. When a user goes to /, and they are not logged in, redirect them to /login/. Upon entering a valid username and password, they should be authenticated and sent back to /. The root page should show that they are logged in and what username they are logged in as.
 
@@ -31,4 +31,6 @@ Login Screen
   type show collections
   type db.nameofcollection.find()
 
-  To exit MongoDB, type control + c
+  To exit MongoDB, type control c
+
+  ###To See updates on Page, you must first type controlc and then refresh browser
